@@ -463,4 +463,42 @@ body button.conference-btn.icon-down-white:after {
   .conference-block-05 .conference-item {
     max-width: 100%;
   }
+}
+.conference-block-06 {
+  display: block;
+  width: 100%;
+  margin-bottom: 64px;
+  padding-block: 64px;
+  background-color: #141414;
+}
+.conference-block-06 .conference-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 670px;
+  height: 100%;
+  z-index: 2;
+}
+.conference-block-06 .container {
+  position: relative;
+  z-index: 8;
+}
+.conference-block-06 .h2 {
+  margin-bottom: 8px;
+  color: #d9d9d9;
+}
+.conference-block-06 .regular {
+  max-width: 382px;
+  margin-bottom: 44px;
+  color: #d9d9d9;
+}
+@media (max-width: 767px) {
+  .conference-block-06 {
+    padding-top: 0;
+  }
+  .conference-block-06 .conference-img {
+    position: relative;
+    height: 332px;
+    margin-bottom: 40px;
+  }
 }/*# sourceMappingURL=conference-blocks.css.map */
