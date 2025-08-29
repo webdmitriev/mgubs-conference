@@ -5,17 +5,17 @@ $coral: #e1a97f;
 
 $container: 984px;
 
-body {
+.template-conference {
   font-family: "Cormorant", serif;
   background-color: $bg;
 }
 
-.container {
+.template-conference .container {
   width: 100%;
   max-width: $container;
 }
 
-body {
+.template-conference {
   .title {
     display: block;
     width: 100%;
@@ -116,19 +116,19 @@ body {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  body button.conference-btn-gold:hover {
+  .template-conference button.conference-btn-gold:hover {
     background-color: transparent;
     transition: background 0.4s ease;
   }
 }
 
 @media (max-width: 767px) {
-  body h2,
-  body .h2 {
+  .template-conference h2,
+  .template-conference .h2 {
     font-size: 28px;
   }
 
-  body button.conference-btn-gold {
+  .template-conference button.conference-btn-gold {
     min-width: 200px;
   }
 }
