@@ -501,4 +501,117 @@ body button.conference-btn.icon-down-white:after {
     height: 332px;
     margin-bottom: 40px;
   }
+}
+.conference-block-07 {
+  display: block;
+  width: 100%;
+  min-height: 520px;
+  margin-bottom: 64px;
+}
+.conference-block-07 .conference-image {
+  position: absolute;
+  top: 0;
+  left: calc((100% - 984px - 90px) / 2);
+  display: block;
+  width: 422px;
+  height: 100%;
+  overflow: hidden;
+}
+.conference-block-07 .conference-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.conference-block-07 .conference-image .conference-image__descr {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: max-content;
+  font-family: "Cormorant", serif;
+  font-weight: 300;
+  font-size: 84px;
+  line-height: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  writing-mode: vertical-lr;
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+  color: #d9d9d9;
+  transform: translate(-8px, 8px);
+  z-index: 8;
+}
+.conference-block-07 .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-block: 62px;
+}
+.conference-block-07 .conference-content {
+  display: block;
+  width: 100%;
+  max-width: 464px;
+}
+.conference-block-07 .conference-images {
+  gap: 16px 20px;
+  margin-bottom: 40px;
+}
+.conference-block-07 .conference-images img {
+  width: 141px;
+  height: 80px;
+}
+.conference-block-07 .regular {
+  color: #d9d9d9;
+}
+
+@media (max-width: 1199px) {
+  .conference-block-07 .conference-image {
+    left: calc((100% - 984px - 10px) / 2);
+  }
+}
+@media (max-width: 991px) {
+  .conference-block-07 .conference-image {
+    left: 0;
+    width: 340px;
+  }
+  .conference-block-07 .conference-content {
+    max-width: calc(100% - 380px);
+  }
+  .conference-block-07 .conference-images img {
+    width: 130px;
+    height: 74px;
+  }
+}
+@media (max-width: 767px) {
+  .conference-block-07 .conference-image {
+    position: relative;
+    height: 510px;
+    margin: 0 auto 40px auto;
+  }
+  .conference-block-07 .conference-image .conference-image__descr {
+    font-size: 60px;
+    transform: translate(-6px, 8px);
+  }
+  .conference-block-07 .container {
+    padding-top: 0;
+  }
+  .conference-block-07 .conference-content {
+    max-width: 430px;
+    margin: 0 auto;
+  }
+  .conference-block-07 .conference-images {
+    gap: 14px 15px;
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 460px) {
+  .conference-block-07 .conference-image {
+    width: 100%;
+    max-width: 100%;
+  }
+  .conference-block-07 .conference-images {
+    max-width: 276px;
+    margin: 0 auto 24px auto;
+  }
 }/*# sourceMappingURL=conference-blocks.css.map */
