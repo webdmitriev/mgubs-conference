@@ -1,0 +1,134 @@
+$bg: #191919;
+$white: #fff;
+$gray: #d9d9d9;
+$coral: #e1a97f;
+
+$container: 984px;
+
+body {
+  font-family: "Cormorant", serif;
+  background-color: $bg;
+}
+
+.container {
+  width: 100%;
+  max-width: $container;
+}
+
+body {
+  .title {
+    display: block;
+    width: 100%;
+    font-family: "Cormorant", serif;
+    font-weight: 300;
+    font-size: 85px;
+    line-height: 0.9;
+  }
+  h1,
+  .h1 {
+    display: block;
+    width: 100%;
+    font-family: "Cormorant", serif;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 0.9;
+  }
+  h2,
+  .h2 {
+    display: block;
+    width: 100%;
+    font-family: "Cormorant", serif;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 1;
+  }
+  .regular {
+    display: block;
+    width: 100%;
+    font-family: "Cormorant", serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  .subtitle {
+    display: block;
+    width: 100%;
+    font-family: "Cormorant", serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  .sub-subtitle {
+    display: block;
+    width: 100%;
+    font-family: "Cormorant", serif;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 1;
+    color: $gray;
+  }
+  h3,
+  p,
+  span,
+  ul li {
+    font-family: "Cormorant", serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  button.conference-btn {
+    display: block;
+    width: 100%;
+    min-width: 222px;
+    max-width: max-content;
+    padding: 8px 24px;
+    font-family: "Cormorant", serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.3;
+    &-gold {
+      color: $coral;
+      background-color: rgba($coral, 15%);
+      border: 1px solid $coral;
+    }
+    &-silver {
+      color: $white;
+      background-color: rgba($white, 15%);
+      border: 1px solid $white;
+    }
+    &.icon-down-white {
+      position: relative;
+      padding-inline: 42px;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 18px;
+        display: block;
+        width: 16px;
+        height: 9px;
+        background: url("../img/conference/icons/icon-down-white.svg") center / contain no-repeat;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  body button.conference-btn-gold:hover {
+    background-color: transparent;
+    transition: background 0.4s ease;
+  }
+}
+
+@media (max-width: 767px) {
+  body h2,
+  body .h2 {
+    font-size: 28px;
+  }
+
+  body button.conference-btn-gold {
+    min-width: 200px;
+  }
+}

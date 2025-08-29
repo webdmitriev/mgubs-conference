@@ -1,0 +1,88 @@
+.conference-block-01 {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 488px;
+  z-index: 20;
+  .conference-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 488px;
+    z-index: 2;
+  }
+  .container {
+    position: relative;
+    z-index: 8;
+  }
+  .conference-top {
+    display: block;
+    width: 100%;
+    margin-block: 64px 170px;
+    font-size: 16px;
+    line-height: 1.3;
+    color: $white;
+  }
+  .conference-date {
+    display: block;
+    width: 100%;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 1;
+    text-align: right;
+    text-transform: uppercase;
+    color: $white;
+  }
+  .conference-title {
+    display: block;
+    width: 100%;
+    font-size: 64px;
+    line-height: 0.9;
+    text-transform: uppercase;
+    color: $coral;
+  }
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+  .conference-block-01 .conference-img {
+    max-height: 448px;
+  }
+  .conference-block-01 .conference-date {
+    font-size: 28px;
+  }
+  .conference-block-01 .conference-title {
+    font-size: 54px;
+  }
+}
+@media (max-width: 576px) {
+  .conference-block-01 .conference-img {
+    max-height: 490px;
+  }
+  .conference-block-01 .conference-top {
+    margin-bottom: 228px;
+  }
+  .conference-block-01 .conference-title {
+    font-size: 42px;
+  }
+}
+@media (max-width: 460px) {
+  .conference-block-01 .conference-img {
+    max-height: 568px;
+  }
+  .conference-block-01 .conference-date {
+    margin-bottom: 80px;
+  }
+  .conference-block-01 .conference-title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 400px) {
+}

@@ -1,0 +1,44 @@
+.conference-header {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  display: block;
+  width: 100%;
+  transform: translateX(-50%);
+  z-index: 40;
+
+  .conference-header__logotype {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    height: 28px;
+    a {
+      display: block;
+      img {
+      }
+    }
+  }
+  .conference-header__burger {
+    display: block;
+    width: 26px;
+    height: 21px;
+    cursor: pointer;
+    img {
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 460px) {
+}
+@media (max-width: 400px) {
+}

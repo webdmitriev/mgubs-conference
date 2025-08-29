@@ -1,0 +1,105 @@
+.conference-block-03 {
+  position: relative;
+  display: block;
+  width: 100%;
+  .conference-image {
+    position: absolute;
+    top: 0;
+    left: calc((100% - $container - 90px) / 2);
+    display: block;
+    width: 422px;
+    height: 100%;
+    overflow: hidden;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+    .conference-image__descr {
+      position: relative;
+      display: block;
+      width: 100%;
+      max-width: max-content;
+      font-family: "Cormorant", serif;
+      font-weight: 300;
+      font-size: 84px;
+      line-height: 0.8;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+
+      writing-mode: vertical-lr;
+      -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+
+      color: $gray;
+
+      transform: translate(-8px, 16px);
+      z-index: 8;
+    }
+  }
+  .line-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    min-height: 616px;
+    .conference-content {
+      max-width: 466px;
+    }
+    .h2 {
+      margin-bottom: 8px;
+      color: $gray;
+    }
+    .regular {
+      color: $gray;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1199px) {
+  .conference-block-03 .conference-image {
+    left: calc((100% - $container - 10px) / 2);
+  }
+}
+@media (max-width: 991px) {
+  .conference-block-03 .conference-image {
+    left: 0;
+    width: 340px;
+  }
+  .conference-block-03 .conference-image .conference-image__descr {
+    font-size: 70px;
+  }
+  .conference-block-03 .line-wrap {
+    min-height: 500px;
+  }
+  .conference-block-03 .line-wrap .conference-content {
+    max-width: calc(100% - 380px);
+  }
+}
+@media (max-width: 767px) {
+  .conference-block-03 .conference-image {
+    position: relative;
+    height: 510px;
+    margin: 0 auto 64px auto;
+  }
+  .conference-block-03 .line-wrap {
+    min-height: auto;
+  }
+  .conference-block-03 .line-wrap .conference-content {
+    max-width: 100%;
+  }
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 460px) {
+}
+@media (max-width: 400px) {
+  .conference-block-03 .conference-image {
+    width: 100%;
+    height: 464px;
+  }
+}
