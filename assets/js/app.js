@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // conference-block-04
   $(".conference-block-04 .conference-items .conference-item").each((idx, el) => {
-    console.log(idx);
     if (idx >= 4) {
       $(el).hide()
     }
@@ -10,10 +9,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   $(".conference-block-04").on("click", ".conference-btn", function () {
     $(this).hide()
-    $(".conference-block-04 .conference-items .conference-item").each((idx, el) => {
+    $(".conference-block-04 .conference-items .conference-item").each((_, el) => {
       $(el).show()
     })
   })
+
 
   // conference-block-08
   $('.conference-slider').each(function () {
@@ -38,6 +38,21 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       ]
     });
+  })
+
+
+  // conference-block-09
+  $(".conference-block-09 .conference-gallery img").each((idx, el) => {
+    if (idx >= 6) {
+      $(el).hide()
+    }
+  })
+
+  $(".conference-block-09").on("click", ".conference-btn", function () {
+    $(this).hide()
+    $(".conference-block-09 .conference-gallery img").each((_, el) => {
+      $(el).show()
+    })
   })
 
 });
