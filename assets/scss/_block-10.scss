@@ -1,0 +1,80 @@
+.conference-block-10 {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-block: 64px;
+  background-color: #141414;
+  .conference-form {
+    display: block;
+    width: 100%;
+    max-width: 382px;
+    .conference-form__field {
+      display: block;
+      width: 100%;
+      input {
+        display: block;
+        width: 100%;
+        padding-bottom: 6px;
+        font-family: "Cormorant", serif;
+        font-weight: 300;
+        font-size: 16px;
+        color: $white;
+        border-bottom: 1px solid rgba($gray, 0.5);
+        &::placeholder {
+          color: rgba($white, 0.4);
+        }
+      }
+      button {
+        margin-top: 40px;
+      }
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+  .conference-content {
+    display: block;
+    width: 100%;
+    max-width: 382px;
+    .h2 {
+      margin-bottom: 8px;
+      color: $gray;
+    }
+    .regular {
+      color: $gray;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+  .conference-block-10 .conference-form,
+  .conference-block-10 .conference-content {
+    max-width: 46%;
+  }
+}
+@media (max-width: 767px) {
+  .conference-block-10 .conference-content {
+    order: 1;
+    max-width: 70%;
+    margin: 0 auto 40px auto;
+  }
+  .conference-block-10 .conference-form {
+    order: 2;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 576px) {
+  .conference-block-10 .conference-content,
+  .conference-block-10 .conference-form {
+    max-width: 360px;
+  }
+}
+@media (max-width: 460px) {
+}
+@media (max-width: 400px) {
+}
