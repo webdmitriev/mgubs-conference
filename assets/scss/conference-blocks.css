@@ -68,7 +68,7 @@
   font-size: 16px;
   line-height: 1.3;
 }
-.template-conference button.conference-btn {
+.template-conference .conference-btn {
   display: block;
   width: 100%;
   min-width: 222px;
@@ -78,22 +78,23 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 1.3;
+  text-align: center;
 }
-.template-conference button.conference-btn-gold {
+.template-conference .conference-btn-gold {
   color: #e1a97f;
   background-color: rgba(225, 169, 127, 0.15);
   border: 1px solid #e1a97f;
 }
-.template-conference button.conference-btn-silver {
+.template-conference .conference-btn-silver {
   color: #fff;
   background-color: rgba(255, 255, 255, 0.15);
   border: 1px solid #fff;
 }
-.template-conference button.conference-btn.icon-down-white {
+.template-conference .conference-btn.icon-down-white {
   position: relative;
   padding-inline: 42px;
 }
-.template-conference button.conference-btn.icon-down-white:after {
+.template-conference .conference-btn.icon-down-white:after {
   content: "";
   position: absolute;
   top: 50%;

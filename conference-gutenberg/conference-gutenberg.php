@@ -9,10 +9,10 @@ function conference_scripts() {
   }
 
   // ===== CSS =====
-  wp_enqueue_style('conference-style', get_template_directory_uri() . '/assets/css/conference-blocks.css', array(), '1.0.0');
+  wp_enqueue_style('conference-style', get_template_directory_uri() . '/assets/css/conference-blocks.css', array(), '1.0.1');
 
   // ===== JS =====
-  wp_enqueue_script('conference-script', get_template_directory_uri() . '/assets/js/conference.js', array('jquery'), '1.0.0', true);
+  wp_enqueue_script('conference-script', get_template_directory_uri() . '/assets/js/conference.js', array('jquery'), '1.0.1', true);
 }
 add_action('wp_enqueue_scripts', 'conference_scripts');
 

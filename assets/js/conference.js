@@ -55,4 +55,9 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   })
 
+  // conference-header
+  $(".conference-header").on("click", ".conference-header__burger", function () {
+    $(".header-block .header-mobile").show()
+  })
+
 });

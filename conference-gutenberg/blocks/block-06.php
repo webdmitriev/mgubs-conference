@@ -44,7 +44,7 @@ $btn_text   = get_field('btn_text');
     <div class="container">
       <?php if($title): ?><h2 class="h2"><?php echo wp_kses($title, $allowed_tags); ?></h2><?php endif; ?>
       <?php if($descr): ?><p class="regular"><?php echo wp_kses($descr, $allowed_tags); ?></p><?php endif; ?>
-      <?php if($btn_text): ?><button class="conference-btn conference-btn-gold"><?php echo wp_kses($btn_text, $allowed_tags); ?></button><?php endif; ?>
+      <?php if($btn_text): ?><a href="#conference-block-10-scroll" class="ancLinks conference-btn conference-btn-gold"><?php echo wp_kses($btn_text, $allowed_tags); ?></a><?php endif; ?>
     </div>
   <?php endif; ?>
 </section>
