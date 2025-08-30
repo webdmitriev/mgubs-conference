@@ -9,6 +9,8 @@
  * @package webdmitriev
  */
 
+$url = get_template_directory_uri();
+
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -22,3 +24,11 @@
 
 <body class="template-conference">
 
+	<section class="conference-header">
+		<div class="container">
+			<div class="df-sp-ce w-100p">
+				<a href="<?php echo get_home_url(); ?>" class="conference-header__logotype"><img class="img img-contain" src="<?php echo esc_url($url); ?>/assets/img/conference/header/header-logotype.svg" alt="www" /></a>
+				<button class="conference-header__burger"><img class="img img-contain" src="<?php echo esc_url($url); ?>/assets/img/conference/header/burger.svg" alt="www" /></button>
+			</div>
+		</div>
+	</section>

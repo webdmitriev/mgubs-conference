@@ -4,10 +4,14 @@
   width: 100%;
   padding-block: 64px;
   background-color: #141414;
-  .conference-form {
+  .wpcf7 {
     display: block;
     width: 100%;
     max-width: 382px;
+  }
+  .conference-form {
+    display: block;
+    width: 100%;
     .conference-form__field {
       display: block;
       width: 100%;
@@ -51,7 +55,7 @@
 @media (max-width: 1199px) {
 }
 @media (max-width: 991px) {
-  .conference-block-10 .conference-form,
+  .conference-block-10 .wpcf7,
   .conference-block-10 .conference-content {
     max-width: 46%;
   }
@@ -62,7 +66,7 @@
     max-width: 70%;
     margin: 0 auto 40px auto;
   }
-  .conference-block-10 .conference-form {
+  .conference-block-10 .wpcf7 {
     order: 2;
     max-width: 70%;
     margin: 0 auto;
@@ -70,7 +74,7 @@
 }
 @media (max-width: 576px) {
   .conference-block-10 .conference-content,
-  .conference-block-10 .conference-form {
+  .conference-block-10 .wpcf7 {
     max-width: 360px;
   }
 }
